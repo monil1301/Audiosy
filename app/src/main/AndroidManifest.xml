@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Audiosy"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.RootBottomBarActivity"
             android:exported="true"
             android:theme="@style/Theme.Audiosy">
             <intent-filter>

@@ -1,4 +1,4 @@
-package com.shah.android.audiosy
+package com.shah.android.audiosy.activities
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,9 +10,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.shah.android.audiosy.ui.screens.RootBottomBarScreen
 import com.shah.android.audiosy.ui.theme.AudiosyTheme
 
-class MainActivity : ComponentActivity() {
+class RootBottomBarActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    RootBottomBarScreen()
                 }
             }
         }
